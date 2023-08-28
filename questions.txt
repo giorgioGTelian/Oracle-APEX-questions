@@ -1,0 +1,678 @@
+Brian created a page with multiple regions. He now wants to include a list of links to selectively display each region.
+
+How can Brian achieve this?
+A. Create a region of type Region Display Selector, and ensure that each region has Region Display Selector set to "Yes".
+Kim has defined a validation of "Item is NOT zero" on P5_SAL. When she runs the page, the error is displayed in the notification, but does not highlight the item or display the error below the item. Kim changes Display Location to "Inline with Field and Notification". However, the validation error still does not display under the item.
+What must Kim do to ensure that the validation error appears correctly under the item and also in the notification?
+B. Set Display Location to "Inline with Field"
+You want to use the session state value of a page item in the SELECT statement for a report on another page.
+What is the correct way to reference the value of a page item in a SQL statement?
+C. APEX_UTIL.GET_SESSION_STATE(p_item => "˜PAGE_ITEM)
+Ellie has two related interactive grids on a page. Which two steps must she perform to create a master detail relationship between them? (Choose two.)
+G. In one of the columns of the detail region, select the related column of the master region for the Master Column attribute
+C. In the master region, select the correct region for the Detail Region attribute.
+Jenny has a form page based on ORDER_ITEMS. For certain product types, she needs to redirect to a modal dialog page to ask for additional information, before validating or processing the record on page submission.
+Which processing point should Jenny select for the branch?
+B. After Processing
+Which two are true about an "editable" interactive grid? (Choose two.)
+D. You can update only one record at a time
+E. You can include dynamic actions on a column
+Sunny has developed a report and form on CUSTOMERS, which is open to partners. The report displays only customers associated with partners, based on their user credentials. Partners can click an Edit button to go to a form page to update their customers. Sunny is concerned that IT savvy users will be able to alter the
+URL to be able to see and update records from other partners.
+What must Sunny do to protect the form page from URL tampering?
+E. Update Page Access Protection to No URL Access
+Which four tasks can you perform using the Shared Components section in Application Builder? (Choose four.)
+A. Edit the No Data Found messages for multiple report regions in the application
+B. Manage translatable text messages for the application
+D. Change the application alias
+G. Add different application roles and configure their role assignment
+Which three item types support defining a list of values? (Choose three.)
+A. Color Picker
+B. List Manager
+D. Text Field with autocomplete
+Michael has developed an app for tracking product defects. His navigation menu lists each product. He has defined application items and computations to hold the number of defects for each product. For example, for Hedgers, he has defined the application item HEDGER_DEFECTS.
+How can Michael add the number of open defects in the navigation menu entries?
+C. Update the List Entry Label for Hedgers to Hedgers &HEDGER_DEFECTS., and similarly for other products.
+Which three actions can be performed by a workspace administrator? (Choose three.)
+C. Manage user accounts
+D. Monitor workspace activity
+F. Approve workspace requests
+John is evaluating an old APEX application that has over 20 tabular forms. He wants to update the application and replace all of the tabular forms with interactive grids.
+What is the fastest way for John to replace the old reports?
+D. Go to each report and change the type from Tabular Form to Interactive Grid.
+Carl has created a new region template as a copy of the Standard region template in Universal Theme. He wants to update the template, but is not sure how often the template is used throughout the application.
+How can Carl determine all of the pages where his custom template is used?
+D. Run the Application Advisor and select Template Utilization
+What is the least error-prone way to split a long list into two lists?
+C. Create an empty second list, manually re-create the needed list entries, and then remove the matching list entries from the first list.
+Susan is building a new bug tracking application by using the Create Application Wizard. She wants to change the icon on the login screen to the "app-icon-bug" image.
+How can Susan change the icon?
+A. Click Appearance, and then click Choose New Icon
+Which is true interactive reports?
+B. A developer can hide the search bar
+Martin has a text field on a page that he wants to protect with Session State Protection.
+Select the four valid protection levels available to Martin. (Choose four.)
+A. Checksum Required: User Level
+F. Checksum Required: Session Level
+G. Restricted: May not be set from browser
+H. Checksum Required: Application Level
+Which two are true about using the Create Page Wizard to create a report with "Report with Form on Table"? (Choose two.)
+B. The report and form must both be based on the same table or view.
+E. The first page allows users to update records.
+Robert has a form page, Page 5, on the EMP table. He has defined two validations.
+Validation 1 checks that P5_MGR is not null.
+Validation 2 checks that the employee selected in P5_MGR has a job of PRESIDENT or MANAGER.
+How can Robert prevent the employee job validation (Validation 2) from firing when the P5_MGR is NOT NULL validation (Validation 1) has failed?
+C. Add a server-side condition of P5_MGR is NOT NULL to the employee job validation (Validation 2)
+William has created the chart on the left, which displays values.
+He wants to show the chart on the right, which displays percentages.
+
+Which step should William perform to display percentages?
+A. Set the Column Mapping > Value to "Percentage".
+Mary wants to add feedback to an application. She uses the Create Page Wizard, selects Features, and then selects Feedback. The wizard adds a feedback entry to the navigation bar and creates new pages, in her application, under Administration to review and disposition the feedback.
+Which statement is true about feedback data?
+A. Feedback entered into the app can be viewed by developers in Team Development
+Which three are true about using REST Enabled SQL to access a remote database? (Choose three.)
+B. REST Enabled SQL must be enabled in the remote databases' ORDS configuration.
+D. A REST Enabled SQL Reference must be created in Shared Components.
+E. Authentication can be done using the remote database username and password.
+Bill has created a Maintain Customer form as shown in Exhibit 1.
+
+Now he wants the Last Name item to be next to the First Name item as shown in Exhibit 2.
+
+How can Bill achieve this?
+A. Set Start New Row to "Yes" and New Column to "Yes" for the Last Name item.
+Sam is updating an application with a report (Page 10) and form (Page 11), where the form page has Page Mode "Normal." She wants to update the form page to a modal dialog, so it can be called from multiple report pages.
+Sam has already changed Page Mode to "Modal Dialog", removed the breadcrumb region, added a button region to the dialog footer, and moved the buttons to the new region. Whenever she opens the form page from a different report page (Page 15), it keeps returning to the original report page (Page 10) when she cancels or submits the form page.
+Which three steps must Sam perform to get the modal page to always return to the report page from which it was called? (Choose three.)
+B. Change the action on the CANCEL button to "Defined by Dynamic Action."
+C. Create a Dynamic Action of type Cancel Dialog that fires when the CANCEL button is clicked.
+D. Add a Close Dialog process.
+Morgan has a report and form on the EMP table. He updated the form by adding a display-only item P5_LOC, and a change event dynamic action on P5_DEPTNO to populate the item using Set Value with this SQL: select loc from dept where deptno = :P5_DEPTNO;
+When Morgan runs the page, he gets this error:
+apex_error_code:
+
+WWV_FLOW_DML.COLUMN_NOT_FOUND -
+original message: Column LOC not found in table EMP
+What should Morgan do to prevent this error?
+A. Update P5_LOC and set Source Type to "Null".
+Phil has been given the responsibility for an application that was developed years ago, because the original developer has left the company. End users have complained about accessibility because not all pages have titles.
+How can Phil ensure that he corrects all pages in the app without page titles?
+B. Use Application Advisor to perform a check
+Susan created Page 10 as an interactive report, called Departments, on the DEPT table. She also created Page 11 as an interactive report on the EMP table, called Employees.
+Susan would like to add a link in the Departments report (Page 10) that redirects to the Employees report (Page 11) and displays only employees for the selected department.
+How would Susan set items in the link builder on Page 10 to correctly call the report on Page 11?
+C. Set item name to :P11_DEPTNO and value to #DEPTNO#
+ABC Company developed an employee directly by using an interactive report.
+The HR manager (an end user) has customized his or her report to show only employees in the HR department, and wants to review the same report weekly.
+How can the HR manager achieve this?
+D. Save the report as the primary report
+Betty has created a zip file, app100_files.zip, to include all of her static application files that she references in her application. The files are divided into different subdirectories for JavaScript and CSS.
+How can Betty upload the static files, so they can be referenced, and maintain the subdirectory structure?
+D. Upload app100_files.zip, and set Unzip File to Yes.
+When testing the Data Load Wizard pages, you realize that you forgot to add a transformation rule.
+What should you do to add the transformation rule?
+B. Update Data Load Definition.
+George used to Create Page Wizard to create a calendar on the DEMO_ORDERS table based on the ORDER_TIMESTAMP column. However, the calendar shows only the month and list views.
+What does George need to do to show week and day views?
+A. Select the End Date Column
+As a project manager, you use spreadsheets to keep track of multiple projects. As you took responsibility of more projects, you became tired of managing them in spreadsheets.
+You have collated all of your project data in one single spreadsheet. You also want to maintain the data in an Oracle Database table by using an Oracle APEX application.
+Which two actions can you take? (Choose two.)
+A. Define a Data Loading page in the Create Application Wizard.
+C. Create an application by using the Create Application Wizard, and then add a table for the spreadsheet data.
+Which two statements are true about workspace in Oracle APEX?
+New schemas can be created and associated during workspace creation
+They can be associated with multiple schemas in the same database
+
+Which are two of the benefit of building a plugin 
+It improve reusability and maintenance
+
+Which two statements are true about low code applications built using Oracle APEX Application
+Development Service on OCI?
+• They provide great quality and consistency with low maintenance.
+• They can be easily scaled up.
+
+Which statement is true about using Live Template Options?
+• Using Live Template Options, you can alter a component's template options without refreshing the page
+
+An Interactive Report has the LINK COLUMN value under LINK set to Link To Custom Target. The pencil icon must be selectively displayed or hidden based on the value of any of the other columns. Which action does this?
+• Set an expression in CONDITION TYPE based on a column value.
+
+Which two statements are true about creating and using pages in an APEX application?
+• Modal and non-modal dialog pages are supported only if the current application theme contain at leas one page template of type Dialog Page
+• Feature pages can be added only once per application.
+
+ You have created a master detail page on the PROJECTS table using the create page wizard. 
+Only application administrators are to be permitted to access the master detail page. What must you do to meet this requirement?
+Set the page authorization scheme of Administration Rights 
+
+In which two cases can you use classic reports?
+To provide basic sort and search options
+To provide download option
+
+
+
+
+
+
+Examine these statements:
+Create table dept (
+Id
+	Name
+	Age
+);
+Audit all on dept;
+
+Create table emp
+	
+
+Emp /audicols
+Name /nn
+Email /unique
+Position / values manager, clerk
+Agge num
+
+
+You are required to have a Cards look and feel for a Classic Report. Which action does this?
+Under attributes, select the Cards template.
+
+You must facilitate PL/SQL server-side access to first-time rendered page item without leaving the page. Which two options will independently satisfy this need?
+Computation
+Dynamic action
+
+
+You must create a single master detail page where users can select a row in the master grid is to update the details grids Users must also interact with the master on the detail without leaving the page Which type of master detail implementation should you use?
+Stacker
+
+Examine this page: Read Only condition specified for item P4_COMMENTS: No other Read Only conditions are specified for any other components. Which statement is true?
+• P4 COMMENTS will display as read only, when the value of application item AI_EDIT_MODE is NULL in the session state.
+
+Which two statements are true about applications for mobile devices? (Choose all correct answers)
+Mobile apps developed with APEX must have a connection to communicate with an Oracle Database.
+By default, Column Toggle Reports are created with all the columns set to the same priority.
+
+Which two statements are true about creating and using pages in an APEX application? (Choose all correct answers)
+Feature pages can be added only once per application.
+Modal and nonmodal dialog pages are supported only if the current application theme contains at least one page template of the dialog page type.
+
+Which three are features of the Data Load utility in Data Workshop? (Choose all correct answers)
+Load XML, JSON, XLSX, or delimited-field text files.
+Choose the character set in which the text file is encoded.
+Omit (skip) columns when loading.
+You are required to create a table that permits all columns in every row to be unloaded to a structured text file using the Data Workshop utility. Which two data types must be avoided? 
+bfile and blob
+
+You have created a master detail page on the PROJECTS table by using the Create Page wizard. Only application administrators are to be permitted to access the master detail page. What must you do to meet this requirement?
+Set the page authorization scheme of Administration Rights.
+
+Which two callback procedures or functions apply to APEX plug-ins? (Choose all correct answers)
+AJAX
+Render
+
+You are required to use a Static Content region type to display messages about employees of the month. Employee names are stored in the P1_ENAME page item. Which text, when placed in Source, will display the messages correctly?
+Join me in congratulating &P1_ENAME. as new employee of the month!
+
+An application was created by using the Create Application wizard, which enabled the Access Control feature. Which two components are created when the Access Control feature is enabled? (Choose all correct answers)
+the configuration page to the set access level of authenticated users
+the administrative page region with links to the Access Control feature
+
+You are required to create a single master detail page where users can select a row in the master grid to update the detail grids. Users must also interact with the master or the detail without leaving the page. Which type of master detail implementation must you use?
+Stacked
+
+You must facilitate PL/SQL server-side access to first-time rendered page item values after the page loads, without leaving the page. Which two options will independently satisfy this need? Dynamic Actions 
+Page Render process
+
+Which three components can be created on Global pages?
+Buttons
+Dynamic Actions
+
+You are required to create and run a query using Query Builder. Which three attributes can you add on the Conditions tab?
+Sort type
+Group by
+Sort order
+Which two statements are true about an end user customizing interactive reports?
+Mathematical computations can be added to columns.
+ multiple charts can be created for each interactive report.
+A flashback query can be executed.
+
+In the Create Application wizard, you click the Add Page button to create a Form page and select the Include Report check box. Which report is generated by default?
+Interactive report
+
+Which statement is true about the Link Column attribute of an interactive report?
+The Authorization Scheme can be specified for Link Column.
+
+Which statement is true about creating master detail forms?
+Wizard-generated master detail forms also automatically create validations for some columns.
+
+Which three statements are true about loading data from the Create Application From File wizard? (Choose all correct answers)
+Column delimited data can be pasted and loaded.
+CSV, XLSX, XML, TXT, or JSON files can be uploaded.
+A sample data set from the sample list can be uploaded.
+
+Which statements are true about Oracle Application Express workspaces? (Choose two)
+It can access more than one database schema.
+It enables multiple developers to create multiple applications simultaneously.
+
+App Builder allows which of the following file types to create an application? (Choose four)
+XLSX
+JSON
+XML
+CSV
+
+Your chart query syntax looks like the following: SELECT link, label, value FROM … In the syntax, what does value refer to?
+Column that defines the bar size
+
+Which types of downloads are allowed by interactive grids? (Choose four)
+Excel
+CSV
+PDF
+CSV
+
+Which statements are true about themes? (Choose three)
+When you switch to a new theme, all the components that are assigned to a template are assigned to a corresponding template in the new theme.
+Workspace themes are available to all developers in the workspace.
+You can copy an existing theme and make changes to the copy.
+
+On the Faceted Search attribute, the Selection is set to: Chart, Selection type = faceted search. What would be the behavior of the faceted search?
+1 chart per facet
+The chart is shown and also the table in Search result
+Checkbox filters refreshes the charts and the table
+
+When a trigger name is changed and you clicked on 'Save & Compile', what will happen?
+Trigger is created
+
+What is true about global page?
+All of the choices
+
+Javascript was implemented on a Calendar item with the below function implementation: function(option) byTime=enabled minTime=7:00 maxTime=18:00 What's the result?
+Disable time
+
+You have a form and you need to make sure that PRODUCT_ID is visible but not changed on submit.
+Condition config Read Only when Item is NOT NULL
+
+What is true about Interactive Report?
+Interactive Reports can render based on User Interface Defaults
+
+What is true about Page Computation?
+Assign value for application items
+Assign value on submit or initialization
+
+What is true about REST enabled SQL query
+Can be source of Interactive grids
+
+When creating form, query from EMP. Creating a simple form and link a report to this form. SELECT ename,dept_no,sal,(avg commission) as ave_comm When 'Save' was clicked, an error was shown: Cannot have virtual column
+set 'Query Only' to Yes
+
+What is true about Link attributes?
+Can have authorization
+Can have Condition
+
+What are the steps to Create a workspace for a new user
+Create new DB user and populate workspace name
+
+Which statement about Branches is true?
+For Redirect type of branching, there is no new request created to display the page
+
+You don't want to show left navigation menu, how to implement this?
+For totally no Navigation Menu: Go to Shared Components > (User Interface) User Interface Attributes > Desktop > [Navigation Menu > Display Navigation(Yes/No)]
+
+Advantages of Plugins
+Maintainability
+Reusablility
+Always supported in any version
+
+How to convert AnyChart to JET charts
+Use Application Upgrade Utility
+
+Create application from excel with Blueprint
+Can choose features to enable
+Will create the underlying tables
+Will store the records from the file
+Can export and import to other instance
+
+One click Remote Deployment
+From 20.1 to remote 20.1
+
+What are Live Template options for?
+Create layout without refreshing the page
+
+How to add APEX feature to an existing app?
+Create page template
+
+You have a form and value is not showing properly. How should you check?
+Click Debug in session
+
+You don't want hidden value be altered by Javascript
+Set [Value Protected = Yes]
+
+Download & Print are disabled
+Instance Setting > native printer
+
+You want to run a PL/SQL on every new database session
+Execute as application process before region
+
+To pass filter to external REST source
+{"variable": "$lt": [value]}
+
+Which are valid process types?
+Close Dialog
+Reset Pagination
+Send email
+
+What does the below Javascript in Calendar region do? (pOptions) firstDay = 1
+Monday is first in the calendar week
+
+The Salary and Department fields and their labels should show when the job is SALESMAN. Which step should be implemented?
+Add a dynamic action on Job field
+Add a dynamic action on Department and Salary fields
+
+What is true about Authentication
+APEX can have multi-factor authentication
+OpenDoors need DB account
+Social Signon will need DB account
+LDAP Directory will need DB account
+
+When exporting an application
+When exporting as zip, exports shared components by hierarchy
+
+About submitting page item value
+Item to submit: P_ITEM
+
+You want values on a column to conditionally appear based on the value of other column. How should this be implemented?
+Modify the SQL code to make the column value dependent on other column's value
+
+You want user to be able to navigate straight to page10 from external page/source. The Home page was set to 1. How can this be accomplished?
+Enable Deep Linking
+
+The project needs to create a new theme template
+Copy an existing theme template and modify according to new requirements
+
+What are included in APEX Development Service?
+All of the choices
+
+You are adding a 'Suplemental Text' on Download. What will happen when the report is downloaded?
+The Supplemental text is added as the first line of the file content.
+Synchronized REST service
+Will not initiate if no steps are defined
+Will not run if attributes/properties do not match
+
+In the Interactive Report, needs to put condition on the pencil icon: to show or not show based on column value
+Modify the query to make the pencil icon conditional
+
+You want to show label, description, and badge of list items in the navigation. What List Template should be used?
+Navigation Mega Menu
+
+A form is created based on PROJECTS table. Depending on the selected project, the page needs to redirect to a modal page to inquire more details before validating on page submission. Which two can accomplish this?
+Validating
+Processing
+
+What is true about theme roller
+A theme can be modified at any time as long as Is Public is enabled
+
+You want to show the page as Read Only for users that does not have Administration Rights
+Set Condition Read Only when: not USER.IS_AUTHORIZED('Administration Rights')
+
+Interactive Grid javascript on initialization, new = Button, label=Refresh
+Creates a 'Refresh' button next to Add Row
+
+You want users to have the ability to load data via the APEX screen. What feature should be enabled?
+Data Workshop Utility
+
+In which two cases can you use classic reports?
+to provide basic sort and search
+to provide the download option
+
+You are required to create an application from a spreadsheet and change the default application ID. There are no other applications installed. Which two ID is valid?
+77777
+101
+
+Using the App Builder component, you can perform which three tasks?
+Create a new App
+Edit pages in the page designer
+Install a sample App
+ Which three of the following options are TRUE about a page in an APEX application?
+To view the rendered version of the page, you run or submit it to the Oracle APEX engine.
+A page can contain buttons, page items and regions.
+A page can be viewed and edited in the Page Designer.
+
+Choose the two statements that are TRUE about the Universal Theme in APEX.
+Responsive UI
+Easy customization
+
+The Page Designer Toolbar allows you to perform which two of the following actions?
+Create a new page
+Navigate to Shared Components
+
+ Choose from the following the different kinds of page components you can create in APEX.
+Faceted Search
+Interactive Grid
+
+When a button is pressed, an overlay window is positioned within the viewport. What kind of page mode is it?
+Modal Dialog
+
+
+ You can create a report in which of the three following methods?
+Create a report as a new page in an application.
+Create a report when you create a new database application.
+Create a report region on a page in an application.
+
+ I want to hide a few columns in my interactive report. To do so, which option should I choose from the Actions menu?
+Columns
+
+Which two of the following capabilities are TRUE for both Interactive Report and Interactive Grid?
+End user can customize how and what data is displayed.
+End user can rearrange the report interactively using the mouse.
+
+Which two types of pages behave similarly in functionality?
+Smart Filter (assuming it's a filtering mechanism)
+Faceted Search.
+
+ In a Classic Report, an end user can perform which one of the following actions?
+Sort the columns of the report.
+
+
+Choose the three types of aggregations you can apply on a column.
+Sum
+Average
+Count.
+
+Choose the two statements that are TRUE about an Interactive Report. As a developer:
+You can customize the Actions menu to include or exclude certain options.
+You can customize the pagination.
+
+Which two of the following types can an end user save the customized Interactive report as?
+A Public report (if permitted by the developer)
+A private report.
+
+ To highlight certain rows in the interactive report based on a condition, you must:
+Choose a condition in Format > Highlight.
+
+
+
+ Choose the two options provided in a Column Heading menu of an Interactive Report.
+Control Break
+Hide.
+
+. When a table or a SQL query returns many rows, an Interactive Grid is best displayed to the user with pagination. The two types of pagination available are:
+Scroll
+Page.
+
+Which two statements that are TRUE about charts in Interactive grid?
+Once a chart is created, you can switch the view between Grid and Chart view.
+You can create multiple charts at a time in an interactive grid
+
+Which three of the following statements are TRUE about saved Public Interactive Grids?
+Any user may save public interactive grids (as their own private versions).
+Public reports are available to all users.
+To enable an end user to save a public interactive grid, the user must have the required permission.
+
+Which two are true when the Edit option is NOT enabled for an Interactive Grid?
+The end user cannot edit the underlying data in the database.
+The end user can customize the report.
+
+Choose the three types of page items that can be placed on a page.
+Date Picker
+Select List
+Checkbox.
+
+Let's say that there are two select lists on a page. Making a selection in the DEPARTMENT select list, determines which individuals display in the Employees select list. This type of LOV is called:
+Cascading LOV
+
+Choose from the below options the actions that can be performed when a button is clicked.
+All of them.
+
+Consider a customers report. A customer name is clicked in the report to display the Customer Details form. When the items in the form dialog are updated and the user clicks Apply Changes, the page process is executed and the items from the page are used to update and commit the underlying table in the Oracle Database. What are the two types of events that occurred in this scenario?
+Page Processing
+Page Rendering (though the emphasis in the scenario is more on processing).
+
+When you run an application, the APEX engine relies on which two processes?
+Run Page
+Show Page.
+
+A Page Computation can be created from which two of the following tabs?
+Processing
+However, only one of the provided options (Processing) is the correct place to create a Page Computation. The other options (Rendering Tree, Dynamic Actions, and Shared Components) are not where you'd typically set up a Page Computation.
+
+When you click a Customer Name in the Customers report, the Customer Details form dialog page is displayed. What are the events that occur in this scenario?
+Page rendering and processing
+
+To create a Dynamic Action, you need to specify which three of the following options?
+What elements are affected by the action
+What action or actions are performed
+When the action occurs.
+
+ When you create a Dynamic Action, you specify the event that causes the dynamic action to fire. Choose the categories these events are classified into.
+Custom Events
+Browser Events
+Framework Events
+Component Events
+All of them (since all the individual categories listed are valid).
+
+In an Employee form, the 'Commission' and 'Hire Date' fields are enabled only if the Job is 'Salesman'. This can be achieved by which feature of APEX?
+Dynamic Actions.
+
+Which two statements are TRUE about Dynamic Actions?
+Dynamic actions provide a way to define complex client-side behaviour declaratively without the need for JavaScript.
+More dynamic actions you add to a page, the greater your overall page size.
+
+ Select the three types of Facets you can create in APEX.
+Checkbox Group
+Range
+
+Select the three types of Card Layout you can create in APEX.
+Float
+Grid
+
+ Which three of the following statements are TRUE about Faceted Search?
+After the end user changes a facet, the results, dependent facets, and occurrence counts refresh immediately.
+The right side of the page features a Search Results region, which can display as a classic report or a cards report.
+However, only two of the provided statements are true for Faceted Search in APEX based on the standard behavior.
+
+Select two features of a Smart Filters Page.
+Each filter displays as a suggestion chip with a single count of how often the specific suggestion value occurs.
+Consists of a single search field with filters at the top of the page and a report at the bottom.
+
+What are the three types of Master Detail Form you can create in APEX
+Two Page Drill Down
+Stacked
+Side by Side.
+
+ Consider a page in an APEX app where the Departments names with location is displayed on the left. Selecting a Department on the left will render details of the employees corresponding to that department on the right. Which kind of report/form is this?
+Side by Side Master Detail
+
+ Select the three ways in which you can create a Form in APEX.
+Using the Create Page wizard
+Create a Form region in Page Designer
+Using the Create Application Wizard.
+Generally, clicking on the hamburger menu in the upper-left corner of an APEX application displays a list of pages. What is this navigation called?
+Navigation Menu
+
+Select the two places from where you can access the Shared Components Page?
+Page Designer
+Application homepage.
+
+Which three statements are TRUE about Search Configuration?
+Searches can be based on Local data, APEX Lists, REST Enabled SQL Service, or REST Data Sources.
+Search Configuration is a shared component defines the data source to be searched and the way results should be displayed.
+One or more Search Configurations can be configured in a Search Page.
+
+4. Which three statements are TRUE about Shared Components?
+Shared components are common elements that can be displayed or applied on any page within an application.
+Breadcrumbs, Lists, and Navigation Bar entries are examples of shared components.
+Once you create a Shared Component, you can add them to any page within your APEX application.
+
+What are the three key features of Universal Theme?
+Easy Customization
+Responsive Design
+Versatile UI Components.
+
+ Developers can use Template Options in which of the following ways?
+All of them
+
+Which of the following options in the Developer Toolbar enables you to customize the look and feel of the application?
+Quick Edit
+
+ Choose the statement that is TRUE about Universal Theme.
+All of them
+
+What three are the building blocks of Approvals Component?
+Unified Task List
+Task Details Page
+Task Definition.
+
+
+
+What three are the key features of Data Load Definition?
+Easy workflow for end users: upload the file, verify the preview, and load data.
+Column mapping occurs at design time, removing the burden on end users.
+The APEX_DATA_LOADING PL/SQL API is available for custom processing.
+
+Choose the three requirements for creating a REST Enabled SQL Reference.
+Activate REST Enabled SQL for the target schema on the remote database.
+Install Oracle REST Data Services (ORDS) 19.x or later.
+Configure and enable the REST Enabled SQL service feature.
+
+What three are the uses of Collections in APEX?
+Use collections to temporarily capture one or more nonscalar Values.
+You insert, update, and delete collection information using PL/SQL API APEX_COLLECTION.
+Collections can be accessed, manipulated, or processed during a user's specific session.
+
+You can apply an authorization scheme for which three of the following components?
+A page
+Specific control such as region, item, or button
+An entire application.
+
+ The APEX engine uses which component as a key for tracking each user's session state
+APP_user
+
+Choose the three supported spatial geometry objects in Maps.
+Polygons
+Points
+Heat map.
+
+Choose the three correct statements about Charts in APEX.
+You can visualize data as bar, line, area, range, combination, scatter, bubble, polar, radar, pie, donut, funnel and more
+You can create charts without using Oracle JET:
+
+What are the two primary ways to move database objects and data from one environment to another, for a single application?
+SQL Workshop
+Oracle SQL Developer.
+
+While migrating apps, once the database objects are created in the target environment, you can load the data using which of the components?
+Data workshop
+
+
+
+Select the two advantages of using One-click Remote Deployment.
+Directly deploy your app definition along with the objects from the source system to the target system.
+Deploy the app, and explicitly install the supporting objects in one-click.
+
+
+
+
+
+
+
+
+
